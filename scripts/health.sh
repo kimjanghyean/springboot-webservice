@@ -32,7 +32,7 @@ do
 	then 
 		echo "> Health Check 실패"
 		echo "> 엔진엑스에 연결하지 않고 배포를 종료합니다."
-		echo "> health_find_idle_port : ${find_idle_port}"
+		
 		exit 1
 	fi
 	
