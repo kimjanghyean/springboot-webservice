@@ -30,7 +30,9 @@ function find_idle_port()
 	if [ ${IDLE_PROFILE} == real1 ]
 	then
 		echo "8081"
+		echo "> profile8081_find_idle_port : ${find_idle_port}"
 	else
 		echo "8082"
+		echo "> profile8082_find_idle_port : ${find_idle_port}"
 	fi
 }
