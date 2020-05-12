@@ -25,7 +25,7 @@ do
 	else 
 		echo "> Health Check 응답이 없거나 실행 상태가 아닙니다."
 		echo "> Health Check: ${RESPONSE}"
-		echo "> health_find_idle_port : ${find_idle_port}"
+	
 	fi
 	
 	if [ ${RETRY_COUNT} -eq 10 ]
