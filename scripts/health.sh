@@ -25,13 +25,14 @@ do
 	else 
 		echo "> Health Check 응답이 없거나 실행 상태가 아닙니다."
 		echo "> Health Check: ${RESPONSE}"
+		echo "> health_find_idle_port : ${find_idle_port}"
 	fi
 	
 	if [ ${RETRY_COUNT} -eq 10 ]
 	then 
 		echo "> Health Check 실패"
 		echo "> 엔진엑스에 연결하지 않고 배포를 종료합니다."
-		echo "> health_find_idle_port : $find_idle_port"
+		echo "> health_find_idle_port : ${find_idle_port}"
 		exit 1
 	fi
 	
